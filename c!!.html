@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic and Logical Operations</title>
+</head>
+<body>
+
+<h2>Arithmetic and Logical Operations in JavaScript</h2>
+
+<!-- Form to display results -->
+<div>
+    <p>Arithmetic Operations:</p>
+    <p>Sum: <span id="sum"></span></p>
+    <p>Difference: <span id="difference"></span></p>
+    <p>Product: <span id="product"></span></p>
+    <p>Quotient: <span id="quotient"></span></p>
+    <p>Remainder: <span id="remainder"></span></p>
+</div>
+
+<div>
+    <p>String Concatenation:</p>
+    <p>Concatenated String: <span id="concatenatedStr"></span></p>
+</div>
+
+<div>
+    <p>Comparison Operations:</p>
+    <p>Is Equal (10 == 5): <span id="isEqual"></span></p>
+    <p>Is Greater (10 > 5): <span id="isGreater"></span></p>
+</div>
+
+<div>
+    <p>Logical Operations:</p>
+    <p>AND (true && false): <span id="andResult"></span></p>
+    <p>OR (true || false): <span id="orResult"></span></p>
+    <p>NOT (!true): <span id="notResult"></span></p>
+</div>
+
+<script>
+// Declare and initialize variables
+let num1 = 10, num2 = 5;
+let num3 = 10.5, num4 = 3.0;
+
+// Arithmetic operations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+let quotient = num3 / num4;
+let remainder = num1 % num2;
+
+// String concatenation
+let str1 = "Hello", str2 = "World!";
+let concatenatedStr = str1 + " " + str2;
+
+// Comparison operations
+let isEqual = (num1 == num2);
+let isGreater = (num1 > num2);
+
+// Logical operations
+let val1 = true, val2 = false;
+let andResult = (val1 && val2);
+let orResult = (val1 || val2);
+let notResult = !val1;
+
+// Display results on the webpage
+document.getElementById('sum').textContent = sum;
+document.getElementById('difference').textContent = difference;
+document.getElementById('product').textContent = product;
+document.getElementById('quotient').textContent = quotient;
+document.getElementById('remainder').textContent = remainder;
+
+document.getElementById('concatenatedStr').textContent = concatenatedStr;
+
+document.getElementById('isEqual').textContent = isEqual ? "True" : "False";
+document.getElementById('isGreater').textContent = isGreater ? "True" : "False";
+
+document.getElementById('andResult').textContent = andResult ? "True" : "False";
+document.getElementById('orResult').textContent = orResult ? "True" : "False";
+document.getElementById('notResult').textContent = notResult ? "True" : "False";
+</script>
+
+</body>
+</html>
